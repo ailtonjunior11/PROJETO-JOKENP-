@@ -1,0 +1,149 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.container {
+
+    height: 430px;
+    padding: 50px;
+    background: #00000094;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.button {
+
+    display: flex;
+    margin: 15px 0px;
+    gap: 25px;
+}
+
+button {
+
+    padding: 8px 10px;
+    font-size: 55px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+}
+
+button:hover {
+
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#rock {
+
+    background: #8100a8;
+
+}
+
+#paper {
+
+    background: #00ff62;
+
+}
+
+#scissors {
+
+    background: #00ccff;
+
+}
+
+.result {
+
+    font-size: 25px;
+   
+}
+
+p {
+
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.machine-score {
+
+    margin-bottom: 50px;
+}
+
+.your-score span {
+
+    color: #00f9b3;
+    font-size: 28px;
+}
+
+.machine-score span {
+
+    color: #eb0000;
+    font-size: 28px;
+}
+
+#restart {
+
+    height: 35px;
+    width: 250px;
+    font-size: 17px;
+    margin-top: -30px;
+    background: #ff3700;
+    color: #ffffff;
+    letter-spacing: 10px;
+    padding-left: 34px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+
+        height: 460px;
+        padding: 30px;
+        background: #00000094;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #restart {
+
+        height: 35px;
+        width: 200px;
+        font-size: 12px;
+        margin-top: -30px;
+        background: #ff3700;
+        color: #ffffff;
+        letter-spacing: 10px;
+        padding-left: 20px;
+    }
+}
